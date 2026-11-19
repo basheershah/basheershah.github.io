@@ -234,3 +234,8 @@ main h2.first { margin-top: 8px; }
 .filters button.on { background: var(--accent); border-color: var(--accent); color: #fff; }
 
 ul.collab li { margin: 6px 0; }
+
+/* Justified paragraphs and news citations on their own line */
+main p { text-align: justify; hyphens: auto; }
+.news-month .cite { display: block; margin-top: 2px; color: var(--muted); }
+.news-month .cite .me { color: var(--ink); }
