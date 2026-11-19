@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research | Shaik Basheeruddin Shah</title>
+  <meta name="description" content="Homepage of Shaik Basheeruddin Shah, Ph.D., Postdoctoral Fellow at Khalifa University. Research on 5G/6G waveform design, modulo sampling, and model-based deep learning.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">Shaik Basheeruddin Shah</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching &amp; Service</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ===== PROFILE (same on every page) ===== -->
+  <aside class="profile">
+    <!-- To add your photo: upload it as assets/img/profile.jpg -->
+    <img src="assets/img/profile.jpg" alt="Shaik Basheeruddin Shah" onerror="this.onerror=null;this.src='assets/img/placeholder.svg';">
+    <h2>Shaik Basheeruddin Shah, Ph.D.</h2>
+    <p class="role">Postdoctoral Fellow<br>Department of Electrical Engineering<br>Khalifa University, Abu Dhabi, UAE</p>
+    <ul class="links">
+      <li>&#9993; <a href="mailto:basheershah09@gmail.com">basheershah09@gmail.com</a></li>
+      <li><a href="https://scholar.google.com/citations?user=rE05Hq4AAAAJ&amp;hl=en">Google Scholar</a></li>
+      <li><a href="https://orcid.org/0000-0003-0743-8315">ORCID</a></li>
+      <!-- To add LinkedIn: put your URL in place of YOUR-LINKEDIN-URL and delete the two comment marks around this line
+      <li><a href="YOUR-LINKEDIN-URL">LinkedIn</a></li> -->
+    </ul>
+    <a class="btn" href="assets/cv/Basheer_Shah_CV.pdf">Download CV</a>
+  </aside>
+
+  <main>
+<h1>Research</h1>
+    <p>My work spans five connected themes, from signal representations to waveforms, sampling hardware, and learning-based recovery. Labels such as [J15] refer to the <a href="publications.html">Publications</a> page.</p>
+
+    <div class="theme">
+      <h3>Low-PAPR waveforms for 5G/6G</h3>
+      <p>High peak-to-average power ratio (PAPR) limits power-amplifier efficiency in OFDM-based systems. I design Ramanujan-based multicarrier and multiple-access waveforms (RPDM, ORPDM, RPDMA, µ-RPDM, and Modulo-NPDM) with analytical results on PAPR, spectral efficiency, and complexity. I carried out the first software-defined radio implementation and over-the-air validation of RPDM on an NI USRP X310 testbed.</p>
+      <p class="papers">Key papers: [J15], [J13], [J10], [J3], [C15], [S3]</p>
+    </div>
+
+    <div class="theme">
+      <h3>Modulo sampling and high-dynamic-range ADCs</h3>
+      <p>Modulo ADCs fold large signals into a small range, so a low-cost converter can capture high-dynamic-range inputs. I develop recovery algorithms, performance guarantees under quantization, and low-rate hardware prototypes, which led to a US patent application.</p>
+      <p class="papers">Key papers: [J11], [C8], [C10], [D1], [D2], [P1], [S1], [S2]</p>
+    </div>
+
+    <div class="theme">
+      <h3>Model-based deep learning and unfolded networks</h3>
+      <p>Algorithm unrolling turns iterative solvers such as ISTA and ADMM into trainable neural networks. I study when these networks train reliably, with optimization and generalization guarantees, and design faster sparse-recovery algorithms.</p>
+      <p class="papers">Key papers: [J6], [C9]</p>
+    </div>
+
+    <div class="theme">
+      <h3>Ramanujan signal processing and period estimation</h3>
+      <p>I developed signal representations based on Ramanujan sums and complex conjugate pair sums to extract periods and frequencies from short signals. This includes the orthogonal complex conjugate periodic transform, which needs about half the computation of the FFT for complex-valued signals, with applications to ECG and EEG signals.</p>
+      <p class="papers">Key papers: [J1], [J2], [J4], [J5], [J7], [J17], [C13], [C4]&ndash;[C7]</p>
+    </div>
+
+    <div class="theme">
+      <h3>Machine learning for antennas and environmental data</h3>
+      <p>With collaborators at Khalifa University and the University of Belgrade, I apply machine learning to antenna modeling and to air-quality forecasting in the UAE.</p>
+      <p class="papers">Key papers: [J8], [J9], [J14], [J16], [C14]</p>
+    </div>
+
+    <h2>Collaborations</h2>
+    <ul>
+      <li>Key Researcher, Khalifa University&ndash;University of Belgrade Joint Research Collaboration (2024&ndash;present)</li>
+      <li>Weizmann Institute of Science, Israel (Prof. Yonina C. Eldar)</li>
+      <li>Shiv Nadar University, India (Prof. Vijay Kumar Chakka)</li>
+    </ul>
+  </main>
+</div>
+
+<footer>&copy; 2026 Shaik Basheeruddin Shah &middot; Last updated November 2026</footer>
+
+</body>
+</html>
