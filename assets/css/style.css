@@ -213,3 +213,24 @@ footer {
   .topbar { position: static; }
   .topbar-inner { justify-content: center; }
 }
+
+/* ---------- Additions: news citations, filters, collaborators ---------- */
+main h2.first { margin-top: 8px; }
+.news-month li { line-height: 1.6; }
+.news-month li a, ol.pubs a { font-weight: 500; }
+
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 8px; }
+.filters button {
+  font: inherit;
+  font-size: 0.88rem;
+  padding: 5px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--muted);
+  cursor: pointer;
+}
+.filters button:hover { border-color: var(--accent); color: var(--accent); }
+.filters button.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+ul.collab li { margin: 6px 0; }

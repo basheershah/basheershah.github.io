@@ -26,6 +26,6 @@ On each of the 4 `.html` files, click the pencil icon. Search for `YOUR-LINKEDIN
 3. Change the month and the bullet text, then click **Commit changes**. The site updates in about a minute.
 4. Also change "Last updated" in the footer of `index.html`.
 
-To add a paper, open `publications.html`, copy one `<li>...</li>` line, paste it at the top of the right section, and edit the text.
+To add a paper, open `publications.html`, copy one `<li data-topics="...">...</li>` line, paste it at the top of the right section, and edit the text and link. Set `data-topics` to one or more of `waveforms modulo learning ramanujan mlapps biomedical`. The paper then shows up under that topic's filter, and the Research page's "See all papers" link includes it automatically. You never need to edit the Research page for a new paper. (The paper counts on the Research page are just text; update them occasionally if you like.)
 
 To update your CV, upload the new PDF to `assets/cv/` with the same name, `Basheer_Shah_CV.pdf`. Your existing link keeps working.

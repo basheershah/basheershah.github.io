@@ -6,7 +6,7 @@
   <title>Research | Shaik Basheeruddin Shah</title>
   <meta name="description" content="Homepage of Shaik Basheeruddin Shah, Ph.D., Postdoctoral Fellow at Khalifa University. Research on 5G/6G waveform design, modulo sampling, and model-based deep learning.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:wght@600&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -29,10 +29,10 @@
 
   <!-- ===== PROFILE (same on every page) ===== -->
   <aside class="profile">
-    <!-- To add your photo: upload it as assets/img/profile.jpg -->
+    <!-- Your photo: assets/img/profile.jpg -->
     <img src="assets/img/profile.jpg" alt="Shaik Basheeruddin Shah" onerror="this.onerror=null;this.src='assets/img/placeholder.svg';">
     <h2>Shaik Basheeruddin Shah, Ph.D.</h2>
-    <p class="role">Postdoctoral Fellow<br>Department of Electrical Engineering<br>Khalifa University, Abu Dhabi, UAE</p>
+    <p class="role">Postdoctoral Fellow<br>Department of Electrical Engineering<br><a href="https://www.ku.ac.ae/academics/college-of-engineering/department/department-of-electrical-engineering-and-computer-science">Khalifa University</a>, Abu Dhabi, UAE</p>
     <ul class="links">
       <li>&#9993; <a href="mailto:basheershah09@gmail.com">basheershah09@gmail.com</a></li>
       <li><a href="https://scholar.google.com/citations?user=rE05Hq4AAAAJ&amp;hl=en">Google Scholar</a></li>
@@ -44,44 +44,74 @@
   </aside>
 
   <main>
-<h1>Research</h1>
-    <p>My work spans five connected themes, from signal representations to waveforms, sampling hardware, and learning-based recovery. Labels such as [J15] refer to the <a href="publications.html">Publications</a> page.</p>
+    <h1>Research</h1>
 
+    <h2 class="first">Research Interests</h2>
+    <ul class="tags">
+      <li>5G/6G waveform design</li>
+      <li>Modulo sampling &amp; high-dynamic-range ADCs</li>
+      <li>Model-based deep learning</li>
+      <li>Sparse recovery</li>
+      <li>Period estimation</li>
+      <li>Ramanujan signal processing</li>
+      <li>Software-defined radio</li>
+    </ul>
+
+    <h2>Research Themes</h2>
+    <p>Each theme links to its papers on the Publications page. New papers appear there automatically once tagged with the theme.</p>
     <div class="theme">
-      <h3>Low-PAPR waveforms for 5G/6G</h3>
+      <h3>Wireless waveforms for 5G/6G</h3>
       <p>High peak-to-average power ratio (PAPR) limits power-amplifier efficiency in OFDM-based systems. I design Ramanujan-based multicarrier and multiple-access waveforms (RPDM, ORPDM, RPDMA, µ-RPDM, and Modulo-NPDM) with analytical results on PAPR, spectral efficiency, and complexity. I carried out the first software-defined radio implementation and over-the-air validation of RPDM on an NI USRP X310 testbed.</p>
-      <p class="papers">Key papers: [J15], [J13], [J10], [J3], [C15], [S3]</p>
+      <p class="papers"><a href="publications.html#waveforms">See all 8 papers on this topic &rarr;</a></p>
     </div>
 
     <div class="theme">
       <h3>Modulo sampling and high-dynamic-range ADCs</h3>
       <p>Modulo ADCs fold large signals into a small range, so a low-cost converter can capture high-dynamic-range inputs. I develop recovery algorithms, performance guarantees under quantization, and low-rate hardware prototypes, which led to a US patent application.</p>
-      <p class="papers">Key papers: [J11], [C8], [C10], [D1], [D2], [P1], [S1], [S2]</p>
+      <p class="papers"><a href="publications.html#modulo">See all 8 papers on this topic &rarr;</a></p>
     </div>
 
     <div class="theme">
       <h3>Model-based deep learning and unfolded networks</h3>
       <p>Algorithm unrolling turns iterative solvers such as ISTA and ADMM into trainable neural networks. I study when these networks train reliably, with optimization and generalization guarantees, and design faster sparse-recovery algorithms.</p>
-      <p class="papers">Key papers: [J6], [C9]</p>
+      <p class="papers"><a href="publications.html#learning">See all 3 papers on this topic &rarr;</a></p>
     </div>
 
     <div class="theme">
       <h3>Ramanujan signal processing and period estimation</h3>
-      <p>I developed signal representations based on Ramanujan sums and complex conjugate pair sums to extract periods and frequencies from short signals. This includes the orthogonal complex conjugate periodic transform, which needs about half the computation of the FFT for complex-valued signals, with applications to ECG and EEG signals.</p>
-      <p class="papers">Key papers: [J1], [J2], [J4], [J5], [J7], [J17], [C13], [C4]&ndash;[C7]</p>
+      <p>I developed signal representations based on Ramanujan sums and complex conjugate pair sums to extract periods and frequencies from short signals. This includes the orthogonal complex conjugate periodic transform, which needs about half the computation of the FFT for complex-valued signals.</p>
+      <p class="papers"><a href="publications.html#ramanujan">See all 12 papers on this topic &rarr;</a></p>
     </div>
 
     <div class="theme">
       <h3>Machine learning for antennas and environmental data</h3>
       <p>With collaborators at Khalifa University and the University of Belgrade, I apply machine learning to antenna modeling and to air-quality forecasting in the UAE.</p>
-      <p class="papers">Key papers: [J8], [J9], [J14], [J16], [C14]</p>
+      <p class="papers"><a href="publications.html#mlapps">See all 5 papers on this topic &rarr;</a></p>
     </div>
 
-    <h2>Collaborations</h2>
+    <div class="theme">
+      <h3>Biomedical signal processing</h3>
+      <p>Earlier work on ECG and EEG analysis (QRS delineation, power-line interference removal, epileptic EEG classification) and DNA tandem-repeat detection.</p>
+      <p class="papers"><a href="publications.html#biomedical">See all 8 papers on this topic &rarr;</a></p>
+    </div>
+
+    <h2>Collaborators</h2>
+    <p>Main collaborators (full co-author lists are on the <a href="publications.html">Publications</a> page):</p>
+    <ul class="collab">
+      <li><a href="https://www.weizmann.ac.il/math/yonina/">Prof. Yonina C. Eldar</a> &mdash; Weizmann Institute of Science, Israel</li>
+      <li><a href="https://www.ku.ac.ae/academics/college-of-engineering/department/department-of-electrical-engineering-and-computer-science/people/dr-nazar-ali">Dr. Nazar T. Ali</a> &mdash; Khalifa University, UAE</li>
+      <li><a href="https://snu.edu.in/faculty/vijay-kumar-chakka/">Prof. Vijay Kumar Chakka</a> &mdash; Shiv Nadar University, India</li>
+      <li><a href="https://www.etf.bg.ac.rs/en/faculty/staff/dragan-olcan-2704">Prof. Dragan Olćan</a> &mdash; University of Belgrade, Serbia</li>
+      <li><a href="https://www.ee.ucl.ac.uk/iiml/members/rodrigues.html">Prof. Miguel R. D. Rodrigues</a> &mdash; University College London, UK</li>
+      <li><a href="https://sites.google.com/view/satishmulleti">Dr. Satish Mulleti</a> &mdash; IIT Bombay, India</li>
+      <li><a href="https://orcid.org/0009-0003-7454-545X">Dr. Goli Srikanth</a> &mdash; University of Luxembourg</li>
+      <li><a href="https://orcid.org/0000-0002-8500-5534">Dr. Jorge Querol</a> &mdash; University of Luxembourg</li>
+      <li><a href="https://orcid.org/0000-0002-7940-6913">Dr. Ahmed Altunaiji</a> &mdash; Khalifa University, UAE</li>
+    </ul>
+
+    <h2>Research Funding</h2>
     <ul>
-      <li>Key Researcher, Khalifa University&ndash;University of Belgrade Joint Research Collaboration (2024&ndash;present)</li>
-      <li>Weizmann Institute of Science, Israel (Prof. Yonina C. Eldar)</li>
-      <li>Shiv Nadar University, India (Prof. Vijay Kumar Chakka)</li>
+      <li>Key Researcher, Khalifa University&ndash;<a href="https://www.etf.bg.ac.rs/en">University of Belgrade</a> Joint Research Collaboration (2024&ndash;present)</li>
     </ul>
   </main>
 </div>
