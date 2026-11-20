@@ -20,6 +20,7 @@
         <li><a class="active" href="research.html">Research</a></li>
         <li><a href="publications.html">Publications</a></li>
         <li><a href="teaching.html">Teaching &amp; Service</a></li>
+        <li><a href="photos.html">Photos</a></li>
       </ul>
     </nav>
   </div>
@@ -50,8 +51,9 @@
 
     <h2 class="first">Research Interests</h2>
     <ul class="tags">
+      <li>Signal representations</li>
       <li>5G/6G waveform design</li>
-      <li>Modulo sampling &amp; high-dynamic-range ADCs</li>
+      <li>Modulo-based sampling theory &amp; high-dynamic-range ADCs</li>
       <li>Model-based deep learning</li>
       <li>Sparse recovery</li>
       <li>Period estimation</li>
@@ -60,40 +62,63 @@
     </ul>
 
     <h2>Research Themes</h2>
-    <p>Each theme links to its papers on the Publications page. New papers appear there automatically once tagged with the theme.</p>
+    <p>Each theme links to its papers on the Publications page. Figures are taken from my published papers.</p>
+    <!-- FIGURES: images live in assets/img/research/. To change one, upload a new image with the same file name. -->
     <div class="theme">
       <h3>Wireless waveforms for 5G/6G</h3>
       <p>High peak-to-average power ratio (PAPR) limits power-amplifier efficiency in OFDM-based systems. I design Ramanujan-based multicarrier and multiple-access waveforms (RPDM, ORPDM, RPDMA, µ-RPDM, and Modulo-NPDM) with analytical results on PAPR, spectral efficiency, and complexity. I carried out the first software-defined radio implementation and over-the-air validation of RPDM on an NI USRP X310 testbed.</p>
+      <div class="theme-figs">
+        <figure class="wide"><a href="assets/img/research/waveforms-1.png"><img src="assets/img/research/waveforms-1.png" alt="Block diagram of the modulo-based multicarrier (mNPDM) transceiver" loading="lazy"></a><figcaption>Block diagram of the modulo-based multicarrier (mNPDM) transceiver <span class="src">&mdash; from <a href="https://doi.org/10.1109/OJCOMS.2026.3717049">Modulo-NPDM, IEEE OJCOMS 2026</a></span></figcaption></figure>
+        <figure><a href="assets/img/research/waveforms-2.png"><img src="assets/img/research/waveforms-2.png" alt="CCDF vs. PAPR: mRPDM and mOFDM against OFDM, RPDM, SC-FDMA, SLM and PTS" loading="lazy"></a><figcaption>CCDF vs. PAPR: mRPDM and mOFDM against OFDM, RPDM, SC-FDMA, SLM and PTS <span class="src">&mdash; from <a href="https://doi.org/10.1109/OJCOMS.2026.3717049">Modulo-NPDM, IEEE OJCOMS 2026</a></span></figcaption></figure>
+        <figure><a href="assets/img/research/waveforms-3.png"><img src="assets/img/research/waveforms-3.png" alt="Over-the-air validation on an NI USRP software-defined radio testbed" loading="lazy"></a><figcaption>Over-the-air validation on an NI USRP software-defined radio testbed <span class="src">&mdash; from <a href="publications.html#waveforms">µ-RPDM, IEEE OJVT (under revision)</a></span></figcaption></figure>
+      </div>
       <p class="papers"><a href="publications.html#waveforms">See all 8 papers on this topic &rarr;</a></p>
     </div>
 
     <div class="theme">
       <h3>Modulo sampling and high-dynamic-range ADCs</h3>
       <p>Modulo ADCs fold large signals into a small range, so a low-cost converter can capture high-dynamic-range inputs. I develop recovery algorithms, performance guarantees under quantization, and low-rate hardware prototypes, which led to a US patent application.</p>
+      <div class="theme-figs">
+        <figure><a href="assets/img/research/modulo-1.png"><img src="assets/img/research/modulo-1.png" alt="A high-dynamic-range signal and its modulo (folded) version" loading="lazy"></a><figcaption>A high-dynamic-range signal and its modulo (folded) version <span class="src">&mdash; from <a href="https://doi.org/10.1109/TSP.2025.3598420">IEEE TSP 2025</a></span></figcaption></figure>
+        <figure><a href="assets/img/research/modulo-2.png"><img src="assets/img/research/modulo-2.png" alt="Modulo-ADC hardware prototype with 1-bit folding information" loading="lazy"></a><figcaption>Modulo-ADC hardware prototype with 1-bit folding information <span class="src">&mdash; from <a href="https://arxiv.org/abs/2412.12724">arXiv:2412.12724</a></span></figcaption></figure>
+      </div>
       <p class="papers"><a href="publications.html#modulo">See all 8 papers on this topic &rarr;</a></p>
     </div>
 
     <div class="theme">
       <h3>Model-based deep learning and unfolded networks</h3>
       <p>Algorithm unrolling turns iterative solvers such as ISTA and ADMM into trainable neural networks. I study when these networks train reliably, with optimization and generalization guarantees, and design faster sparse-recovery algorithms.</p>
+      <div class="theme-figs">
+        <figure class="compact"><a href="assets/img/research/learning-1.png"><img src="assets/img/research/learning-1.png" alt="One layer of the unfolded ISTA network" loading="lazy"></a><figcaption>One layer of the unfolded ISTA network <span class="src">&mdash; from <a href="https://doi.org/10.1109/TSP.2024.3412981">IEEE TSP 2024</a></span></figcaption></figure>
+      </div>
       <p class="papers"><a href="publications.html#learning">See all 3 papers on this topic &rarr;</a></p>
     </div>
 
     <div class="theme">
       <h3>Ramanujan signal processing and period estimation</h3>
-      <p>I developed signal representations based on Ramanujan sums and complex conjugate pair sums to extract periods and frequencies from short signals. This includes the orthogonal complex conjugate periodic transform, which needs about half the computation of the FFT for complex-valued signals.</p>
+      <p>I developed signal representations based on Ramanujan sums and complex conjugate pair sums to extract periods and frequencies from short signals. This includes the orthogonal complex conjugate periodic transform (OCCPT), which needs about half the computation of the FFT for complex-valued signals.</p>
+      <div class="theme-figs">
+        <figure><a href="assets/img/research/ramanujan-1.png"><img src="assets/img/research/ramanujan-1.png" alt="Flow graph of the 8-point OCCPT computation" loading="lazy"></a><figcaption>Flow graph of the 8-point OCCPT computation <span class="src">&mdash; from <a href="https://doi.org/10.1109/TSP.2020.2971936">IEEE TSP 2020</a></span></figcaption></figure>
+        <figure><a href="assets/img/research/ramanujan-2.png"><img src="assets/img/research/ramanujan-2.png" alt="Period estimation of an ECG signal with RPD and RPD-FISTA" loading="lazy"></a><figcaption>Period estimation of an ECG signal with RPD and RPD-FISTA <span class="src">&mdash; from <a href="https://doi.org/10.1109/ACCESS.2026.3741588">IEEE Access 2026</a></span></figcaption></figure>
+      </div>
       <p class="papers"><a href="publications.html#ramanujan">See all 12 papers on this topic &rarr;</a></p>
     </div>
 
     <div class="theme">
-      <h3>Machine learning for antennas and environmental data</h3>
-      <p>With collaborators at Khalifa University and the University of Belgrade, I apply machine learning to antenna modeling and to air-quality forecasting in the UAE.</p>
-      <p class="papers"><a href="publications.html#mlapps">See all 5 papers on this topic &rarr;</a></p>
+      <h3>Machine learning for environmental data</h3>
+      <p>With collaborators at Khalifa University, I apply machine learning to air-quality forecasting (PM2.5, PM10, NO<sub>2</sub>, and O<sub>3</sub>) in the UAE.</p>
+      <div class="theme-figs">
+        <figure class="wide"><a href="assets/img/research/environment-1.png"><img src="assets/img/research/environment-1.png" alt="Two-hour PM2.5 forecasts with linear SVR at an Abu Dhabi station" loading="lazy"></a><figcaption>Two-hour PM2.5 forecasts with linear SVR at an Abu Dhabi station <span class="src">&mdash; from <a href="https://doi.org/10.1038/s41598-025-94013-1">Scientific Reports 2025</a></span></figcaption></figure>
+      </div>
+      <p class="papers"><a href="publications.html#environment">See all 2 papers on this topic &rarr;</a></p>
     </div>
 
     <div class="theme">
       <h3>Biomedical signal processing</h3>
       <p>Earlier work on ECG and EEG analysis (QRS delineation, power-line interference removal, epileptic EEG classification) and DNA tandem-repeat detection.</p>
+      <div class="theme-figs">
+        <figure class="wide"><a href="assets/img/research/biomedical-1.png"><img src="assets/img/research/biomedical-1.png" alt="Raw ECG and the ECG filtered using DFT and CCPT bases" loading="lazy"></a><figcaption>Raw ECG and the ECG filtered using DFT and CCPT bases <span class="src">&mdash; from <a href="https://doi.org/10.1109/TSP.2020.2971936">IEEE TSP 2020</a></span></figcaption></figure>
+      </div>
       <p class="papers"><a href="publications.html#biomedical">See all 8 papers on this topic &rarr;</a></p>
     </div>
 
@@ -109,6 +134,14 @@
       <li><a href="https://orcid.org/0009-0003-7454-545X">Dr. Goli Srikanth</a> &mdash; University of Luxembourg</li>
       <li><a href="https://orcid.org/0000-0002-8500-5534">Dr. Jorge Querol</a> &mdash; University of Luxembourg</li>
       <li><a href="https://orcid.org/0000-0002-7940-6913">Dr. Ahmed Altunaiji</a> &mdash; Khalifa University, UAE</li>
+      <li>Prof. Raed A. Abd-Alhameed &mdash; University of Bradford, UK</li>
+      <li>Prof. A. V. Narasimhadhan &mdash; NIT Karnataka, Surathkal, India</li>
+      <li>Dr. G. V. S. S. K. R. Naganjaneyulu &mdash; RGUKT (IIIT) Nuzvid, India</li>
+      <li>Prof. A. Satyanarayana Reddy &mdash; Shiv Nadar University, India</li>
+      <li>Dr. Darko Ninković &mdash; University of Belgrade, Serbia</li>
+      <li>Dr. Zeyar Aung &mdash; Khalifa University, UAE</li>
+      <li>Dr. Neil Irwin Bernardo &mdash; Weizmann Institute of Science, Israel</li>
+      <li>Venugopalachary Kotha &mdash; Shiv Nadar University, India</li>
     </ul>
 
     <h2>Research Funding</h2>

@@ -29,3 +29,12 @@ On each of the 4 `.html` files, click the pencil icon. Search for `YOUR-LINKEDIN
 To add a paper, open `publications.html`, copy one `<li data-topics="...">...</li>` line, paste it at the top of the right section, and edit the text and link. Set `data-topics` to one or more of `waveforms modulo learning ramanujan mlapps biomedical`. The paper then shows up under that topic's filter, and the Research page's "See all papers" link includes it automatically. You never need to edit the Research page for a new paper. (The paper counts on the Research page are just text; update them occasionally if you like.)
 
 To update your CV, upload the new PDF to `assets/cv/` with the same name, `Basheer_Shah_CV.pdf`. Your existing link keeps working.
+
+## Research figures
+
+Each theme on the Research page has figure slots. Put the images into `assets/img/research/` with these exact names (PNG):
+`waveforms-1.png` (block diagram), `waveforms-2.png` (PAPR result), `modulo-1.png` (modulo folding), `modulo-2.png` (hardware), `learning-1.png`, `ramanujan-1.png`, `environment-1.png`. Any figure whose file is missing is hidden automatically, so you can add them one at a time.
+
+## Photos
+
+Upload photos into `assets/img/photos/`, then follow the instructions in the comment at the top of `photos.html`.
