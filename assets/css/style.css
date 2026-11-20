@@ -243,7 +243,6 @@ main p { text-align: justify; hyphens: auto; }
 /* ---------- Research theme figures ---------- */
 .theme-figs { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 4px 0 14px; }
 .theme-figs figure:only-child { grid-column: 1 / -1; }
-.theme-figs figure.compact img { height: 190px; }
 @media (max-width: 700px) { .theme-figs { grid-template-columns: 1fr; } }
 .theme-figs:empty { display: none; }
 .theme-figs figure { margin: 0; background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 8px; }
@@ -263,7 +262,6 @@ main p { text-align: justify; hyphens: auto; }
 /* ---------- Wide screens: use the extra width ---------- */
 @media (min-width: 1200px) {
   .theme-figs img { height: 300px; }
-  .theme-figs figure.compact img { height: 200px; }
   .gallery { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
   ul.collab { columns: 2; column-gap: 40px; }
   ul.collab li { break-inside: avoid; }
