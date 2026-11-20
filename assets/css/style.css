@@ -266,3 +266,4 @@ main p { text-align: justify; hyphens: auto; }
   ul.collab { columns: 2; column-gap: 40px; }
   ul.collab li { break-inside: avoid; }
 }
+.theme-figs figure.slim img { max-width: 720px; margin: 0 auto; }
