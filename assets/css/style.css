@@ -267,3 +267,8 @@ main p { text-align: justify; hyphens: auto; }
   ul.collab li { break-inside: avoid; }
 }
 .theme-figs figure.slim img { max-width: 720px; margin: 0 auto; }
+
+/* Masonry gallery: shows full photos (portrait and landscape) without cropping */
+.gallery.masonry { display: block; columns: 3 280px; column-gap: 14px; }
+.gallery.masonry figure { break-inside: avoid; margin: 0 0 14px; }
+.gallery.masonry img { aspect-ratio: auto; height: auto; object-fit: initial; }
