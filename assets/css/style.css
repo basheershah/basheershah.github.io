@@ -272,3 +272,6 @@ main p { text-align: justify; hyphens: auto; }
 .gallery.masonry { display: block; columns: 3 280px; column-gap: 14px; }
 .gallery.masonry figure { break-inside: avoid; margin: 0 0 14px; }
 .gallery.masonry img { aspect-ratio: auto; height: auto; object-fit: initial; }
+
+/* Poster cards in photo galleries */
+.gallery figure.poster img { border: 1px solid rgba(0,0,0,0.12); background: #fff; }
