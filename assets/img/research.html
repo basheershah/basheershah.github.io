@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research | Shaik Basheeruddin Shah</title>
+  <meta name="description" content="Homepage of Shaik Basheeruddin Shah, Ph.D., Postdoctoral Fellow at Khalifa University. Research on 5G/6G waveform design, modulo sampling, and model-based deep learning.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:wght@600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">Shaik Basheeruddin Shah</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching &amp; Service</a></li>
+        <li><a href="photos.html">Photos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ===== PROFILE (same on every page) ===== -->
+  <aside class="profile">
+    <!-- Your photo: assets/img/profile.jpg -->
+    <img src="assets/img/profile.jpg" alt="Shaik Basheeruddin Shah" onerror="this.onerror=null;this.src='assets/img/placeholder.svg';">
+    <h2>Shaik Basheeruddin Shah, Ph.D.</h2>
+    <p class="role">Postdoctoral Fellow<br>Department of Electrical Engineering<br><a href="https://www.ku.ac.ae/academics/college-of-engineering/department/department-of-electrical-engineering-and-computer-science">Khalifa University</a>, Abu Dhabi, UAE</p>
+    <ul class="links">
+      <li>&#9993; <a href="mailto:shaik.shah@ku.ac.ae">shaik.shah@ku.ac.ae</a></li>
+      <li>&#9993; <a href="mailto:basheershah09@gmail.com">basheershah09@gmail.com</a></li>
+      <li>&#9742; <a href="tel:+971508936290">+971 50 893 6290</a></li>
+      <li>&#9742; <a href="tel:+918826703498">+91 88267 03498</a></li>
+      <li><a href="https://scholar.google.com/citations?user=rE05Hq4AAAAJ&amp;hl=en">Google Scholar</a></li>
+      <li><a href="https://orcid.org/0000-0003-0743-8315">ORCID</a></li>
+      <!-- To add LinkedIn: put your URL in place of YOUR-LINKEDIN-URL and delete the two comment marks around this line
+      <li><a href="YOUR-LINKEDIN-URL">LinkedIn</a></li> -->
+    </ul>
+    <a class="btn" href="assets/cv/Basheer_Shah_CV.pdf">Download CV</a>
+  </aside>
+
+  <main>
+    <h1>Research</h1>
+
+    <h2 class="first">Research Interests</h2>
+    <ul class="tags">
+      <li>Signal representations</li>
+      <li>5G/6G waveform design</li>
+      <li>Modulo-based sampling theory &amp; high-dynamic-range ADCs</li>
+      <li>Model-based deep learning</li>
+      <li>Sparse recovery</li>
+      <li>Period estimation</li>
+      <li>Ramanujan signal processing</li>
+      <li>Software-defined radio</li>
+    </ul>
+
+    <h2>Research Themes</h2>
+    <p>Each theme links to its papers on the Publications page. Figures are taken from my published papers.</p>
+    <!-- FIGURES: images live in assets/img/research/. To change one, upload a new image with the same file name. -->
+    <div class="theme">
+      <h3>Wireless waveforms for 5G/6G</h3>
+      <p>High peak-to-average power ratio (PAPR) limits power-amplifier efficiency in OFDM-based systems. We design Ramanujan-based multicarrier and multiple-access waveforms (RPDM, ORPDM, RPDMA, µ-RPDM, and Modulo-NPDM) with analytical results on PAPR, spectral efficiency, and complexity. We carried out the first software-defined radio implementation and over-the-air validation of RPDM on an NI USRP X310 testbed.</p>
+      <div class="theme-figs">
+        <figure class="wide"><a href="assets/img/research/waveforms-1.png"><img src="assets/img/research/waveforms-1.png" alt="Block diagram of the modulo-based multicarrier (mNPDM) transceiver" loading="lazy"></a><figcaption>Block diagram of the modulo-based multicarrier (mNPDM) transceiver <span class="src">&mdash; from <a href="https://doi.org/10.1109/OJCOMS.2026.3717049">Modulo-NPDM, IEEE OJCOMS 2026</a></span></figcaption></figure>
+        <figure><a href="assets/img/research/waveforms-2.png"><img src="assets/img/research/waveforms-2.png" alt="CCDF vs. PAPR: mRPDM and mOFDM against OFDM, RPDM, SC-FDMA, SLM and PTS" loading="lazy"></a><figcaption>CCDF vs. PAPR: mRPDM and mOFDM against OFDM, RPDM, SC-FDMA, SLM and PTS <span class="src">&mdash; from <a href="https://doi.org/10.1109/OJCOMS.2026.3717049">Modulo-NPDM, IEEE OJCOMS 2026</a></span></figcaption></figure>
+        <figure><a href="assets/img/research/waveforms-3.png"><img src="assets/img/research/waveforms-3.png" alt="Over-the-air validation on an NI USRP software-defined radio testbed" loading="lazy"></a><figcaption>Over-the-air validation on an NI USRP software-defined radio testbed <span class="src">&mdash; from <a href="publications.html#waveforms">µ-RPDM, IEEE OJVT (under revision)</a></span></figcaption></figure>
+      </div>
+      <p class="papers"><a href="publications.html#waveforms">See all 8 papers on this topic &rarr;</a></p>
+    </div>
+
+    <div class="theme">
+      <h3>Modulo sampling and high-dynamic-range ADCs</h3>
+      <p>Modulo ADCs fold large signals into a small range, so a low-cost converter can capture high-dynamic-range inputs. We develop recovery algorithms, performance guarantees under quantization, and low-rate hardware prototypes, which led to a US patent application.</p>
+      <div class="theme-figs">
+        <figure><a href="assets/img/research/modulo-1.png"><img src="assets/img/research/modulo-1.png" alt="A high-dynamic-range signal and its modulo (folded) version" loading="lazy"></a><figcaption>A high-dynamic-range signal and its modulo (folded) version <span class="src">&mdash; from <a href="https://doi.org/10.1109/TSP.2025.3598420">IEEE TSP 2025</a></span></figcaption></figure>
+        <figure><a href="assets/img/research/modulo-2.png"><img src="assets/img/research/modulo-2.png" alt="Modulo-ADC hardware prototype with 1-bit folding information" loading="lazy"></a><figcaption>Modulo-ADC hardware prototype with 1-bit folding information <span class="src">&mdash; from <a href="https://arxiv.org/abs/2412.12724">arXiv:2412.12724</a></span></figcaption></figure>
+      </div>
+      <p class="papers"><a href="publications.html#modulo">See all 8 papers on this topic &rarr;</a></p>
+    </div>
+
+    <div class="theme">
+      <h3>Model-based deep learning and unfolded networks</h3>
+      <p>Algorithm unrolling turns iterative solvers such as ISTA and ADMM into trainable neural networks. We study when these networks train reliably, with optimization and generalization guarantees, and design faster sparse-recovery algorithms.</p>
+      <div class="theme-figs">
+        <figure><a href="assets/img/research/learning-1.png"><img src="assets/img/research/learning-1.png" alt="One layer of the unfolded ADMM network (ADMM-CSNet)" loading="lazy"></a><figcaption>One layer of the unfolded ADMM network (ADMM-CSNet) <span class="src">&mdash; from <a href="https://doi.org/10.1109/TSP.2024.3412981">IEEE TSP 2024</a></span></figcaption></figure>
+        <figure><a href="assets/img/research/learning-2.png"><img src="assets/img/research/learning-2.png" alt="Training loss of unfolded LISTA and ADMM-CSNet vs. a standard feed-forward network" loading="lazy"></a><figcaption>Training loss of unfolded LISTA and ADMM-CSNet vs. a standard feed-forward network <span class="src">&mdash; from <a href="https://doi.org/10.1109/TSP.2024.3412981">IEEE TSP 2024</a></span></figcaption></figure>
+      </div>
+      <p class="papers"><a href="publications.html#learning">See all 3 papers on this topic &rarr;</a></p>
+    </div>
+
+    <div class="theme">
+      <h3>Ramanujan signal processing and period estimation</h3>
+      <p>We developed signal representations based on Ramanujan sums and complex conjugate pair sums to extract periods and frequencies from short signals. This includes the orthogonal complex conjugate periodic transform (OCCPT), which needs about half the computation of the FFT for complex-valued signals.</p>
+      <div class="theme-figs">
+        <figure><a href="assets/img/research/ramanujan-1.png"><img src="assets/img/research/ramanujan-1.png" alt="Flow graph of the 8-point OCCPT computation" loading="lazy"></a><figcaption>Flow graph of the 8-point OCCPT computation <span class="src">&mdash; from <a href="https://doi.org/10.1109/TSP.2020.2971936">IEEE TSP 2020</a></span></figcaption></figure>
+        <figure><a href="assets/img/research/ramanujan-2.png"><img src="assets/img/research/ramanujan-2.png" alt="Period estimation of an ECG signal with RPD and RPD-FISTA" loading="lazy"></a><figcaption>Period estimation of an ECG signal with RPD and RPD-FISTA <span class="src">&mdash; from <a href="https://doi.org/10.1109/ACCESS.2026.3741588">IEEE Access 2026</a></span></figcaption></figure>
+      </div>
+      <p class="papers"><a href="publications.html#ramanujan">See all 12 papers on this topic &rarr;</a></p>
+    </div>
+
+    <div class="theme">
+      <h3>Machine learning for environmental data</h3>
+      <p>With collaborators at Khalifa University, we apply machine learning to air-quality forecasting (PM2.5, PM10, NO<sub>2</sub>, and O<sub>3</sub>) in the UAE.</p>
+      <div class="theme-figs">
+        <figure><a href="assets/img/research/environment-2.png"><img src="assets/img/research/environment-2.png" alt="Workflow for PM2.5 and PM10 forecasting: preprocessing, feature engineering, and model training" loading="lazy"></a><figcaption>Workflow for PM2.5 and PM10 forecasting: preprocessing, feature engineering, and model training <span class="src">&mdash; from <a href="https://doi.org/10.1038/s41598-025-94013-1">Scientific Reports 2025</a></span></figcaption></figure>
+        <figure><a href="assets/img/research/environment-1.png"><img src="assets/img/research/environment-1.png" alt="Two-hour PM2.5 forecasts with linear SVR at an Abu Dhabi station" loading="lazy"></a><figcaption>Two-hour PM2.5 forecasts with linear SVR at an Abu Dhabi station <span class="src">&mdash; from <a href="https://doi.org/10.1038/s41598-025-94013-1">Scientific Reports 2025</a></span></figcaption></figure>
+      </div>
+      <p class="papers"><a href="publications.html#environment">See all 2 papers on this topic &rarr;</a></p>
+    </div>
+
+    <div class="theme">
+      <h3>Biomedical signal processing</h3>
+      <p>Earlier work on ECG and EEG analysis (QRS delineation, power-line interference removal, epileptic EEG classification) and DNA tandem-repeat detection.</p>
+      <div class="theme-figs">
+        <figure class="wide slim"><a href="assets/img/research/biomedical-1.png"><img src="assets/img/research/biomedical-1.png" alt="Block diagram of the STFT-based QRS detection algorithm" loading="lazy"></a><figcaption>Block diagram of the STFT-based QRS detection algorithm <span class="src">&mdash; from <a href="https://doi.org/10.1016/j.procs.2015.06.075">Procedia Computer Science 2015</a></span></figcaption></figure>
+        <figure><a href="assets/img/research/biomedical-3.png"><img src="assets/img/research/biomedical-3.png" alt="Raw ECG and the ECG filtered using DFT and CCPT bases" loading="lazy"></a><figcaption>Raw ECG and the ECG filtered using DFT and CCPT bases <span class="src">&mdash; from <a href="https://doi.org/10.1109/TSP.2020.2971936">IEEE TSP 2020</a></span></figcaption></figure>
+        <figure><a href="assets/img/research/biomedical-2.png"><img src="assets/img/research/biomedical-2.png" alt="Detected R-peaks with adaptive signal, noise, and threshold levels" loading="lazy"></a><figcaption>Detected R-peaks with adaptive signal, noise, and threshold levels <span class="src">&mdash; from <a href="https://doi.org/10.1109/CONECCT.2015.7383914">IEEE CONECCT 2015</a></span></figcaption></figure>
+      </div>
+      <p class="papers"><a href="publications.html#biomedical">See all 8 papers on this topic &rarr;</a></p>
+    </div>
+
+    <h2>Collaborators / Co-authors</h2>
+    <p>People we have worked with (full co-author lists are on the <a href="publications.html">Publications</a> page):</p>
+    <ul class="collab">
+      <li><a href="https://www.ku.ac.ae/academics/college-of-engineering/department/department-of-electrical-engineering-and-computer-science/people/dr-nazar-ali">Dr. Nazar T. Ali</a> &mdash; <a href="https://www.ku.ac.ae/">Khalifa University</a>, UAE</li>
+      <li><a href="https://www.weizmann.ac.il/math/yonina/">Prof. Yonina C. Eldar</a> &mdash; <a href="https://www.weizmann.ac.il/">Weizmann Institute of Science</a>, Israel</li>
+      <li><a href="https://snu.edu.in/faculty/vijay-kumar-chakka/">Prof. Vijay Kumar Chakka</a> &mdash; <a href="https://snu.edu.in/">Shiv Nadar University</a>, India</li>
+      <li><a href="https://satya8118.github.io/">Dr. A. Satyanarayana Reddy</a> &mdash; <a href="https://snu.edu.in/">Shiv Nadar University</a>, India</li>
+      <li><a href="https://sites.google.com/view/satishmulleti">Dr. Satish Mulleti</a> &mdash; <a href="https://www.iitb.ac.in/">IIT Bombay</a>, India</li>
+      <li><a href="https://orcid.org/0009-0003-7454-545X">Dr. Goli Srikanth</a> &mdash; <a href="https://www.uni.lu/">University of Luxembourg</a>, Luxembourg</li>
+      <li><a href="https://www.ku.ac.ae/?p=2739">Dr. Ahmed Altunaiji</a> &mdash; <a href="https://www.ku.ac.ae/">Khalifa University</a>, UAE</li>
+      <li><a href="https://www.ku.ac.ae/college-people/zeyar-aung">Dr. Zeyar Aung</a> &mdash; <a href="https://www.ku.ac.ae/">Khalifa University</a>, UAE</li>
+      <li><a href="https://www.bradford.ac.uk/staff/raaabd">Prof. Raed A. Abd-Alhameed</a> &mdash; <a href="https://www.bradford.ac.uk/">University of Bradford</a>, UK</li>
+      <li>Dr. G. V. S. S. K. R. Naganjaneyulu &mdash; <a href="https://rguktn.ac.in/">RGUKT (IIIT) Nuzvid</a>, India</li>
+      <li><a href="https://ece.nitk.ac.in/node/478">Prof. A. V. Narasimhadhan</a> &mdash; <a href="https://www.nitk.ac.in/">National Institute of Technology Karnataka, Surathkal</a>, India</li>
+      <li>Dr. Venugopalachary Kotha &mdash; <a href="https://snu.edu.in/">Shiv Nadar University</a>, India</li>
+      <li>Dr. Pradyumna Pradhan &mdash; <a href="https://www.weizmann.ac.il/">Weizmann Institute of Science</a>, Israel</li>
+      <li><a href="https://www.aus.edu/node/99891">Dr. Mohamed Ibrahim Alhajri</a> &mdash; <a href="https://www.aus.edu/">American University of Sharjah</a>, UAE</li>
+      <li>Dr. Priyanka Mathur &mdash; <a href="https://snu.edu.in/">Shiv Nadar University</a>, India</li>
+      <li><a href="https://www.etf.bg.ac.rs/en/faculty/staff/dragan-olcan-2704">Prof. Dragan Olćan</a> &mdash; <a href="https://www.etf.bg.ac.rs/en">University of Belgrade, School of Electrical Engineering</a>, Serbia</li>
+      <li><a href="https://www.ee.ucl.ac.uk/iiml/members/rodrigues.html">Prof. Miguel R. D. Rodrigues</a> &mdash; <a href="https://www.ucl.ac.uk/">University College London</a>, UK</li>
+      <li><a href="https://eee.upd.edu.ph/faculty/neil-irwin-bernardo/">Dr. Neil Irwin Bernardo</a> &mdash; <a href="https://upd.edu.ph/">University of the Philippines Diliman</a>, Philippines</li>
+    </ul>
+
+    <h2>Research Funding</h2>
+    <ul>
+      <li>Key Researcher, Khalifa University&ndash;<a href="https://www.etf.bg.ac.rs/en">University of Belgrade</a> Joint Research Collaboration (2024&ndash;present)</li>
+    </ul>
+  </main>
+</div>
+
+<footer>&copy; 2026 Shaik Basheeruddin Shah &middot; Last updated November 2026</footer>
+
+</body>
+</html>
